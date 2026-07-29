@@ -1,0 +1,34 @@
+# Secret
+.env
+.env.*
+!.env.example
+
+# Datasets and model weights
+bird/
+data/
+hfcache/
+*.sqlite
+
+# Archives
+*.zip
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

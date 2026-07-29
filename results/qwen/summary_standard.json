@@ -1,0 +1,26 @@
+{
+  "n": 148,
+  "execution_accuracy": 0.4527,
+  "valid_sql_rate": 0.75,
+  "avg_steps": 1.0,
+  "convergence_rate": 1.0,
+  "by_difficulty": {
+    "moderate": {
+      "n": 35,
+      "correct": 11,
+      "ex": 0.3142857142857143
+    },
+    "simple": {
+      "n": 97,
+      "correct": 51,
+      "ex": 0.5257731958762887
+    },
+    "challenging": {
+      "n": 16,
+      "correct": 5,
+      "ex": 0.3125
+    }
+  },
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "config": "standard"
+}

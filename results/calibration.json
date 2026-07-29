@@ -1,0 +1,34 @@
+{
+  "qwen/entropy": {
+    "gate": "entropy",
+    "reduction": "mean",
+    "n_calibration": 10,
+    "mu": null,
+    "sigma": null,
+    "tau": 0.2613689226485273
+  },
+  "qwen/energy": {
+    "gate": "energy",
+    "reduction": "mean",
+    "n_calibration": 10,
+    "mu": null,
+    "sigma": null,
+    "tau": -25.847498597427396
+  },
+  "deepseek/entropy": {
+    "gate": "entropy",
+    "reduction": "mean",
+    "n_calibration": 10,
+    "mu": null,
+    "sigma": null,
+    "tau": 1.4320660643867962
+  },
+  "deepseek/energy": {
+    "gate": "energy",
+    "reduction": "mean",
+    "n_calibration": 10,
+    "mu": null,
+    "sigma": null,
+    "tau": -26.53133772997394
+  }
+}

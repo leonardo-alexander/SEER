@@ -1,0 +1,26 @@
+{
+  "n": 150,
+  "execution_accuracy": 0.2067,
+  "valid_sql_rate": 0.6533,
+  "avg_steps": 2.4933,
+  "convergence_rate": 0.6533,
+  "by_difficulty": {
+    "moderate": {
+      "n": 36,
+      "correct": 3,
+      "ex": 0.08333333333333333
+    },
+    "simple": {
+      "n": 98,
+      "correct": 27,
+      "ex": 0.2755102040816326
+    },
+    "challenging": {
+      "n": 16,
+      "correct": 1,
+      "ex": 0.0625
+    }
+  },
+  "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+  "config": "seer_entropy"
+}
