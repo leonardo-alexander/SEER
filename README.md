@@ -171,6 +171,12 @@ SEER/
 ├── seer_runner.py
 ├── SEER.ipynb
 ├── requirements.txt
+├── results/
+│   ├── calibration.json
+│   ├── qwen/
+│   └── deepseek/
+├── .env.example
+├── .gitignore
 ├── CONTRIBUTING.md
 ├── LICENSE
 └── README.md
@@ -241,7 +247,24 @@ results/calibration.json
 
 A cached threshold is recalculated when its stored reduction does not match the current `GATE_REDUCTION`.
 
-## Output files
+The `calibration.json` shipped in this repository records `mu` and `sigma` as
+`null`. The thresholds were produced by an earlier revision that persisted only
+`tau`, and `tau = mu + 2 sigma` cannot be solved for both terms. The `tau`
+values are the ones used for every reported result. Deleting the file and
+re-running calibration regenerates all three fields; because decoding is greedy,
+the recomputed `tau` reproduces the stored values.
+
+## Result artifacts
+
+The results of the reported experiments are included in this repository under
+`results/`, so the analysis scripts can be run without repeating the sweep:
+
+```bash
+python analyze.py
+python analyze_detector.py
+```
+
+Running an experiment writes to the same layout and will overwrite these files.
 
 ```text
 results/
